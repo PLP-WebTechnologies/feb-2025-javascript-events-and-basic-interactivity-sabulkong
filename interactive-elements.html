@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JavaScript Playground 🎮</h1>
+
+    <!-- Event Handling Section -->
+    <section class="section">
+        <h2>Event Handling 🎈</h2>
+        <button id="colorButton">Click me! 🎨</button>
+        <div id="hoverDiv">Hover over me! ✈️</div>
+        <p>Press any key: <span id="keyDisplay"></span></p>
+        <div id="secretArea">Double-click for secret! 🤫</div>
+        <div id="secretMessage" class="hidden">✨ You found the secret! ✨</div>
+    </section>
+
+    <!-- Interactive Elements Section -->
+    <section class="section">
+        <h2>Interactive Elements 🎮</h2>
+        <div class="gallery">
+            <img id="galleryImage" src="https://picsum.photos/300/200?1">
+            <div class="gallery-controls">
+                <button id="prevBtn">◀ Previous</button>
+                <button id="nextBtn">Next ▶</button>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="tab1">Tab 1</button>
+            <button class="tab" data-tab="tab2">Tab 2</button>
+            <button class="tab" data-tab="tab3">Tab 3</button>
+        </div>
+        <div class="tab-content active" id="tab1">Content for Tab 1 📘</div>
+        <div class="tab-content" id="tab2">Content for Tab 2 📗</div>
+        <div class="tab-content" id="tab3">Content for Tab 3 📙</div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section class="section">
+        <h2>Form Validation 📋</h2>
+        <form id="myForm">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Name">
+                <div id="nameError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email">
+                <div id="emailError" class="error"></div>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Password">
+                <div id="passwordError" class="error"></div>
+            </div>
+            <button type="submit">Submit ✅</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
